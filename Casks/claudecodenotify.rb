@@ -1,6 +1,6 @@
 cask "claudecodenotify" do
-  version "1.0.2"
-  sha256 "1aed0be2350c0c8e884b506f943531c0b06a9a2581049d7088f128ccbf5f9cb6"
+  version "1.0.3"
+  sha256 "1317915dd80d1bed38b163ee9fcc107f2aff74ff3226ea3f51c7cb87ee7ae92b"
 
   url "https://github.com/narlei/claudecodenotify/releases/download/v#{version}/ClaudeCodeNotify.dmg"
   name "Claude Code Notify"
@@ -13,7 +13,7 @@ cask "claudecodenotify" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args:         ["-d", "com.apple.quarantine", "#{appdir}/ClaudeCodeNotify.app"],
+                   args: ["-d", "com.apple.quarantine", "#{appdir}/ClaudeCodeNotify.app"],
                    must_succeed: false
   end
 
