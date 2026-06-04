@@ -11,6 +11,12 @@ cask "claudecodenotify" do
 
   app "ClaudeCodeNotify.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-d", "com.apple.quarantine", "#{appdir}/ClaudeCodeNotify.app"],
+                   must_succeed: false
+  end
+
   caveats do
     requires_rosetta
     <<~EOS
