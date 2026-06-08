@@ -1,6 +1,6 @@
 cask "claudecodenotify" do
-  version "1.1.2"
-  sha256 "2258d0337c03f445c12422fc89e08b51c0968aa4d7b12da083b5728e80c2bd8c"
+  version "1.1.3"
+  sha256 "4bfeed461390e38c719b417f9906f408739833f1d7f4e461f8d70ce4e38c2dc4"
 
   url "https://github.com/narlei/claudecodenotify/releases/download/v#{version}/ClaudeCodeNotify.dmg"
   name "Claude Code Notify"
